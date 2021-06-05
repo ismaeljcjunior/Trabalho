@@ -1,0 +1,37 @@
+<form [formGroup]='formularioUsuario'>
+  <p>
+    <mat-form-field style="width: 100%">
+      <mat-label>Nome</mat-label>
+      <input matInput placeholder="Digite o nome" formControlName='nmPessoa'>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field style="width: 100%">
+      <mat-label>CPF</mat-label>
+      <input matInput placeholder="Digite o cpf" formControlName='cpf'>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field style="width: 100%">
+      <mat-label>Data de Nascimento</mat-label>
+      <input matInput placeholder="Digite a Data de Nascimento" formControlName='dtNascimento'>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field style="width: 100%">
+      <mat-label>Login</mat-label>
+      <input matInput placeholder="Digite o Login" formControlName='login'>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field style="width: 100%">
+      <mat-label>Senha</mat-label>
+      <input matInput placeholder="Digite a senha" type="password" formControlName='senha'>
+    </mat-form-field>
+  </p>
+
+  <div style="display:flex;align-items: center; justify-content: space-around;">
+    <button mat-raised-button color="primary" (click)='cadastrar()'>Cadastrar</button>
+    <button mat-raised-button color="warn">Cancelar</button>
+  </div>
+</form>

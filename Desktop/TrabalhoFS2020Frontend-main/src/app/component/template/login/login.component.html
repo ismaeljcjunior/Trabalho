@@ -1,0 +1,16 @@
+<div class="login">
+    <h2 class="text-center" color="primary">Tela de Autenticação</h2>
+    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+        <div class="form">
+            <mat-form-field>
+                <input matInput placeholder="Login" formControlName="username">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="password" placeholder="Senha" formControlName="password">
+            </mat-form-field>
+            <button mat-raised-button color="primary" [disabled]="!formulario.valid" type="submit">Logar</button>
+            <button mat-raised-button color="warn" routerLink="/signup">Novo Usuário</button>
+        </div>
+
+    </form>
+</div>
